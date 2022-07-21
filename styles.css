@@ -10,6 +10,13 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: white;
 }
+.active{
+    background-color: red;
+    display: block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    
+}
 h1{
     color: white;
     margin: 40px;
@@ -87,13 +94,10 @@ h1{
 .name>p{
 
     color: black;
+    margin-left: 60px;
 }
-#blog{
-    background-color: red;
-}
-#upcoming{
-    background-color: red;
-}
+
+
 
 #header{
     /* position: absolute;
@@ -228,7 +232,8 @@ p img{
     #header{
         width: 400px;
         display: grid;
-
+        justify-content: center;
+        align-items: center;
         grid-template-columns: repeat(1,1fr);
        
     }
@@ -239,7 +244,8 @@ p img{
     .container{
         width: 400px;
         display: grid;
-        justify-items: center;
+        justify-content: center;
+        align-items: center;
         grid-template-columns: repeat(1,1fr);
        
     }
