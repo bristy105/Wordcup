@@ -78,9 +78,23 @@ h1{
     margin-top: 20px;
 
 }
+.card{
+    display: block;
+    border: 1px solid gray;
+    
+    border-radius: 5px;
+}
+.name>p{
+
+    color: black;
+}
 #blog{
     background-color: red;
 }
+#upcoming{
+    background-color: red;
+}
+
 #header{
     /* position: absolute;
     width: 1321px;
@@ -201,8 +215,7 @@ p img{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    border: 1px solid gray;
-    border-radius: 5px;
+    
 }
 .country>.img{
     transform: rotate(180deg);
