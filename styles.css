@@ -13,15 +13,39 @@ body{
 h1{
     color: white;
     margin: 40px;
+    font-size: 50px;
     
 }
-.container{
+
+/* Reference */
+/* .container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+} */
+
+
+
+/* Modified */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
 }
+/* Modified */
+
+
+
+
 .text{
     width: 50%;
     height: 100%;
+    
    
    
 
@@ -33,7 +57,7 @@ h1{
 
 }
 
-}.btn{
+.btn{
     text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
@@ -42,6 +66,7 @@ h1{
     color: white;
 }
 .button{
+    
     display: block;
     padding: 10px 30px;
     border-radius: 5px;
@@ -57,36 +82,91 @@ h1{
     background-color: red;
 }
 #header{
-    width: 100%;
-    height: 500px;
+    /* position: absolute;
+    width: 1321px;
+    height: 608px;
+    left: 140px;
+    top: 88px; */
+
+
+    /* Modified */
+    width: 80%;
+    margin: 10% auto;
+    padding: 5%;
+    /* Modified */
+
+
+
     background-color: black;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     padding: 0 50px;
     
 }
+
+    
 #main{
     display: flex;
     gap: 30px;
 }
 .sidebar{
-    margin-top: 100px;
-    border-radius: 5px;
-    width: 200px;
-    height:200px;
-    background-color: black;
+   
+    width: 252px;
+    height: 252px;
+    left: 170px;
+    top: 856px;
+     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+
+/* Modified */
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: darkgray;
+
+
 }
-.info{
-    margin-top: 100px;
-    
-   
+
+/* Reference */
+/* .rectangle{
+
+    width: 312px;
+    height: 312px;
+    left: 140px;
+    top: 826px;
+
+    background: #161616;
+    border-radius: 10px;
+} */
+
+
+
+/* Modified */
+.rectangle{
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
+
+/* Modified */
+
+
+
+
+/* Reference */
+/* .info{
+    margin-top: 100px; 
+} */
+
 .players{
+    height: 362px;
+    width: 312px;
+    left: 476px;
+    top: 826px;
+    border-radius: [object Object]px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
@@ -96,9 +176,38 @@ span{
     color: tomato;
 }
 p{
-    color: white;
+   
     margin: 20px 0;
+ color: white;
+    
 }
+.icon{
+    color: black;
+    display: flex;
+    align-items: center;
+}
+p img{
+   
+    padding: 20px 10px;
+    margin-left: 20px;
+}
+
 .image img{
     width: 100%;
+}
+
+
+
+@media  screen and (max-width : 1200px){
+    #header{
+        background-color: red;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+       
+    }
 }
